@@ -57,7 +57,7 @@ After realizing that my JavaScript code was running before the HTML document was
   <head> </head>
   <body>
     <div>.....</div>
-    <script src="" defer></script>
+    <script src=""></script>
   </body>
 </html>
 ```

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Overpass";
+  min-height: 100vh;
+  background-color: var(--very-dark-blue);
+}
+
+.container {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );
+  border-radius: 2rem;
+  max-width: 25rem;
+}
+
+.box-container,
+.th-box-container {
+  padding: 2rem 1rem 2rem 2rem;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  max-width: 2.5rem;
+  min-height: 2.5rem;
+  background-color: var(--dark-blue);
+}
+
+.heading {
+  text-align: left;
+  margin-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.info {
+  color: var(--light-grey);
+  line-height: 150%;
+}
+
+.ratings > button {
+  border-radius: 50%;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  margin-right: 1.25rem;
+}
+
+.submit-button,
+#back-button {
+  width: 98%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 2rem;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.image,
+.info,
+.ratings {
+  margin-bottom: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+}
+
+.btn:focus {
+  background-color: var(--medium-grey);
+}
+
+.th-box-container {
+  text-align: center;
+}
+
+.final-rating {
+  background-color: var(--dark-blue);
+  color: var(--orange);
+  max-width: fit-content;
+  margin: 1.5rem auto;
+  padding: 0.25rem 0.8rem;
+  border-radius: 80px;
+}
+
+.msg h2 {
+  color: var(--white);
+}
+
+.msg p {
+  color: var(--white);
+  opacity: 60%;
+  max-width: 99%;
+  margin: 1rem auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 50px;
+  font-size: 18px;
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--orange);
+}
